@@ -1,0 +1,5 @@
+dbnametwitter = 'xxxx'
+usertwitter = 'xxx'
+passwordtwitter = 'xxxx'
+hosttwitter = 'xxxx'
+porttwitter = 'xxxx'
