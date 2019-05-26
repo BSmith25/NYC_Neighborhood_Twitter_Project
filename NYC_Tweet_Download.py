@@ -8,10 +8,10 @@ import tweepy
 import json
 
 #Importing postgres credentials
-from postgres_credentials import *
+from postgres_credentials_ex import *
 
 #Importing twitter credentials
-from twitter_credentials import *
+from twitter_credentials_ex import *
 
 def create_tweets_table():
 	"""	
