@@ -1,5 +1,5 @@
 # NYC_Neighborhood_Twitter_Project
-This project collects tweets that are geolocated in NYC and stores them in a PostgreSQL database (more to come . . . )
+This project collects tweets that are geolocated in NYC and stores them in a PostgreSQL database, and assigns a neighborhood to each tweet based on its coordinates (more to come . . . )
 
 
 NYC_Tweet_Download.py streams tweets through the Twitter API with tweepy and stores them in a PostgreSQL database.  In order to run this code, the following must be done:
@@ -13,4 +13,4 @@ NYC_Tweet_Download.py streams tweets through the Twitter API with tweepy and sto
       e. Copy ‘Consumer Key’, ‘Consumer Secret’, ‘Access token’ and ‘Access Token Secret’.
       
       
-Find_Neighborhood.py takes a list of coordinates in a csv file and identifies the Brooklyn neighborhood for these coordinates, if the tweet is from Brooklyn.  In the future this will be hooked up to the PostgreSQL database of NYC tweet locations to associate tweets with neighborhoods.  This can be run with the NYC Open Data neighborhood shapefile: https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas/cpf4-rkhq and a sample CSV (with the correct columsn names inserted).
+Assign_Neighborhood.py takes tweet coordinates from the PostgreSQL database, identifies the neighborhood for these coordinates, then updates the neighborhood in the database.  This can be run with the NYC Open Data neighborhood shapefile: https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas/cpf4-rkhq and I deleted any shape that was a "park-cemetary-etc" shape as they overlapped neighborhoods.
