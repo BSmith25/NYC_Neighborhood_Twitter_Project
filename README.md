@@ -14,3 +14,7 @@ NYC_Tweet_Download.py streams tweets through the Twitter API with tweepy and sto
       
       
 Assign_Neighborhood.py takes tweet coordinates from the PostgreSQL database, identifies the neighborhood for these coordinates, then updates the neighborhood in the database.  This can be run with the NYC Open Data neighborhood shapefile: https://data.cityofnewyork.us/City-Government/Neighborhood-Tabulation-Areas/cpf4-rkhq and I deleted any shape that was a "park-cemetary-etc" shape as they overlapped neighborhoods.
+
+NeighborhoodTweets.py creates a new table that counts the number of tweets in each neighborhood
+
+Neighborhood_WordCloud.py makes and saves word clouds for the 10 neighborhoods with the most tweets
