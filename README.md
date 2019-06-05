@@ -18,3 +18,5 @@ Assign_Neighborhood.py takes tweet coordinates from the PostgreSQL database, ide
 NeighborhoodTweets.py creates a new table that counts the number of tweets in each neighborhood
 
 Neighborhood_WordCloud.py makes and saves word clouds for the 10 neighborhoods with the most tweets
+
+Neighborhood_WordCount.py creates a list of search words and their synonyms/hypernyms/hyponyms/mesonyms/holonyms/entitlements to search in the tweets from each of the top 20 neighborhoods by tweet count.  Then a new table is created with the frequency of each word in a neighborhoods tweets (as word occurence/tweet)
