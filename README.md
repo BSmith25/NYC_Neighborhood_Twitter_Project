@@ -1,5 +1,5 @@
 # NYC_Neighborhood_Twitter_Project
-This project collects tweets that are geolocated in NYC and stores them in a PostgreSQL database, and assigns a neighborhood to each tweet based on its coordinates (more to come . . . )
+This project collects tweets that are geolocated in NYC and stores them in a PostgreSQL database, assigns a neighborhood to each tweet based on its coordinates, makes wordclouds for the top 10 neighborhoods by tweet count, and counts the occurences of certain words/concepts in each of the top 20 neighborhoods.  The final step will be categorizing neighborhoods based on the occurence of the words in tweets from the neighborhood in order to help direct people to a good NYC neighborhood to move to.
 
 
 NYC_Tweet_Download.py streams tweets through the Twitter API with tweepy and stores them in a PostgreSQL database.  In order to run this code, the following must be done:
