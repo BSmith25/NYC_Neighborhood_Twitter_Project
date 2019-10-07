@@ -20,3 +20,7 @@ NeighborhoodTweets.py creates a new table that counts the number of tweets in ea
 Neighborhood_WordCloud.py makes and saves word clouds for the 10 neighborhoods with the most tweets
 
 Neighborhood_WordCount.py creates a list of search words and their synonyms/hypernyms/hyponyms/mesonyms/holonyms/entitlements to search in the tweets from each of the top 20 neighborhoods by tweet count.  Then a new table is created with the frequency of each word in a neighborhoods tweets (as word occurence/tweet)
+
+neural_net.py attempts to predict the neighborhood a tweet was made from based using a neural net
+
+Neighborhood_Tweet_Results.ipynb is a jupyter notebook to show interesting results
